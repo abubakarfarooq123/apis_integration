@@ -1,5 +1,7 @@
 import 'package:apis_integration/example3.dart';
 import 'package:apis_integration/example_2.dart';
+import 'package:apis_integration/signupScreen.dart';
+import 'package:apis_integration/uploadImage.dart';
 import 'package:apis_integration/withoutmodelcomplex.dart';
 import 'package:flutter/material.dart';
 
@@ -15,11 +17,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const LastExample(),
+      home: const UploadImage(),
     );
   }
 }
